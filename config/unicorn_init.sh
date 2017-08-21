@@ -12,7 +12,7 @@ set -e
 
 # Feel free to change any of the following variables for your app:
 TIMEOUT=${TIMEOUT-60}
-APP_ROOT=/home/gabriel/apps/deploy-test/current
+APP_ROOT=/var/www/deploy-test/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="cd $APP_ROOT;~/.rbenv/bin/rbenv exec bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
 AS_USER=gabriel
