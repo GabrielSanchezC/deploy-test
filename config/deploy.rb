@@ -1,10 +1,10 @@
 # config valid only for current version of Capistrano
 lock "3.9.0"
 
-set :application, "deplot-test"
+set :application, "deploy-test"
 set :repo_url, "git@github.com:GabrielSanchezC/deploy-test.git"
 
-set :deploy_to, "/var/www/#{fetch(:application}"
+set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_user, "gabriel"
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
